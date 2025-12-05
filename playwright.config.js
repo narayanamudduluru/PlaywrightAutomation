@@ -35,7 +35,7 @@ export default defineConfig({
     //screenshot: 'only-on-failure',
     //video:'off',
   },
-  timeout:3000,
+  //timeout:3000,
   /* Configure projects for major browsers */
   projects: [
     {
