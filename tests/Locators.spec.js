@@ -19,10 +19,10 @@ test('Locators', async({page})=>{
     //Click on login button
     await page.click("//button[normalize-space()='Log in']")
 
+    await page.waitForTimeout(5000)
     //verify Logout link presence
-
     const logoutlink = await page.locator("//a[@id='logout2']")
 
     await expect(logoutlink).toBeVisible();
-    await page.close()
+    
 })
